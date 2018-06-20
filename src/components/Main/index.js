@@ -1,12 +1,12 @@
 import React from 'react';
-import style from './style.module.css'
+import styles from './styles.module.css'
 
 class Main extends React.Component {
     render() {
         return (
-            <div className={style.main}>
-                <input className={style.input} placeholder="Username" />
-                <button className={style.submitButton}>Submit</button>
+            <div className={styles.main}>
+                <input className={styles.input} placeholder="Username" />
+                <button className={styles.submitButton}>Submit</button>
             </div>
         )
     }

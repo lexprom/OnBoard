@@ -7,8 +7,8 @@ module.exports = {
         path: path.resolve(__dirname, "public"),
         publicPath: '/public/'
     },
-    devServer:{
-        open : true,
+    devServer: {
+        open: true,
         openPage: '/public'
     },
     module: {
@@ -21,9 +21,11 @@ module.exports = {
             {
                 test: /.css$/,
                 use: [
-                    require.resolve('style-loader'),
                     {
-                        loader: require.resolve('css-loader'),
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader',
                         options: {
                             importLoaders: 1,
                             modules: true
