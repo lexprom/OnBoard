@@ -5,5 +5,6 @@ import App from './components/App';
 import {Provider} from 'mobx-react';
 import NameStore from './stores/NameStore';
 
+const root = <Provider nameStore={NameStore}><App /></Provider>;
 
-ReactDOM.render(<Provider NameStore={NameStore}><App /></Provider>, document.getElementById('root'));
+ReactDOM.render(root, document.getElementById('root'));
