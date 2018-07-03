@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './styles.module.css'
 import { inject, observer } from 'mobx-react';
 
+
 @inject('nameStore')
 @observer
 class Main extends React.Component {

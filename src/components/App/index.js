@@ -4,7 +4,7 @@ import Main from '../Main';
 import styles from './styles.module.css'
 
 class App extends React.Component {
-    render () {
+    render() {
         return (
             <div className={styles.App}>
                 <Cover />
